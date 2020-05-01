@@ -46,6 +46,8 @@
                         this.data.btnsize = "btn-sm";
                       } else if ($el.hasClass("btn-lg")) {
                         this.data.btnsize = "btn-lg";
+                      } else if ($el.hasClass("btn-block")) {
+                      this.data.btnsize = "btn-block";
                       }
 
                       this.data.href = $el.attr('href');
@@ -93,7 +95,7 @@
                             $el.removeClass('btn-link btn-default btn-primary btn-info btn-success btn-warning btn-danger').addClass(this.data.btntype);
                         }
 
-                        $el.removeClass('btn-xs btn-sm btn-lg');
+                        $el.removeClass('btn-xs btn-sm btn-lg btn-block');
 			if (this.data.btnsize) {
                             $el.addClass(this.data.btnsize);
                         }
