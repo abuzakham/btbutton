@@ -20,5 +20,7 @@ CKEDITOR.plugins.setLang('btbutton', 'en', {
     buttonSizeExSmall: 'Extra Small',
     buttonSizeSmall: 'Small',
     buttonSizeNormal: 'Normal',
-    buttonSizeLarge: 'Large'
+    buttonSizeLarge: 'Large',
+    buttonBlockSize: 'Full Width'
+    
 });
