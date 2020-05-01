@@ -44,7 +44,8 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                                     [lang.buttonSizeExSmall, 'btn-xs'],
                                     [lang.buttonSizeSmall, 'btn-sm'],
                                     [lang.buttonSizeNormal, ''],
-                                    [lang.buttonSizeLarge, 'btn-lg']
+                                    [lang.buttonSizeLarge, 'btn-lg'],
+                                    [lang.buttonBlockSize, 'btn-block']
                                 ],
                                 setup: function (widget) {
                                     this.setValue(widget.data.btnsize || '');
