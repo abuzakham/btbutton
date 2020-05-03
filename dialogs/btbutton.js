@@ -58,6 +58,27 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                     },
                     {
                         type: "hbox",
+                        widths: ["50%"],
+                        children: [
+                            {
+                                id: 'btnblock',
+                                type: 'select',
+                                label: lang.buttonWidthLabel,
+                                items: [
+                                    [lang.buttonDefault, ''],
+                                    [lang.buttonBlockFullWidth, 'btn-block']
+                                ],
+                                setup: function (widget) {
+                                    this.setValue(widget.data.btnblock || '');
+                                },
+                                commit: function (widget) {
+                                    widget.setData('btnblock', this.getValue());
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        type: "hbox",
                         widths: ["50%", "50%"],
                         children: [
                             {

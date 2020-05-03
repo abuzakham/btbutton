@@ -7,6 +7,7 @@ CKEDITOR.plugins.setLang('btbutton', 'uk', {
     tabIcons: 'Іконки',
     buttonStyleLabel: 'Стиль',
     buttonSizeLabel: 'Розмір',
+    buttonWidthLabel: 'Width',
     buttonTextLabel: 'Текст',
     buttonUrlLabel: 'URL',
     buttonTargetLabel: 'Ціль',
@@ -21,5 +22,5 @@ CKEDITOR.plugins.setLang('btbutton', 'uk', {
     buttonSizeSmall: 'Мала',
     buttonSizeNormal: 'Звичайна',
     buttonSizeLarge: 'Велика',
-    buttonBlockSize: 'Full Width'
+    buttonBlockFullWidth: 'Full Width'
 });
