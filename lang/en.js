@@ -18,6 +18,8 @@ CKEDITOR.plugins.setLang('btbutton', 'en', {
     buttonSuccess: 'Success',
     buttonWarning: 'Warning',
     buttonDanger: 'Danger',
+    buttonDark: 'Dark',
+    buttonLight: 'Light',
     buttonSizeExSmall: 'Extra Small',
     buttonSizeSmall: 'Small',
     buttonSizeNormal: 'Normal',
