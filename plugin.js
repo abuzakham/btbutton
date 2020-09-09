@@ -76,15 +76,15 @@
                     }
 
                     if (fa_icon_left.length > 0) {
-                      fa_icon_left.removeClass('fa-icon-left').removeClass('fa');
+                      fa_icon_left.removeClass('fa-icon-left').removeClass('fas');
                       this.data.faiconleft = fa_icon_left.attr('class');
                       fa_icon_left.addClass('fa-icon-left').addClass('fa');
                     }
 
                     if (fa_icon_right.length > 0) {
-                      fa_icon_right.removeClass('fa-icon-right').removeClass('fa');
+                      fa_icon_right.removeClass('fa-icon-right').removeClass('fas');
                       this.data.faiconright = fa_icon_right.attr('class');
-                      fa_icon_right.addClass('fa-icon-right').addClass('fa');
+                      fa_icon_right.addClass('fa-icon-right').addClass('fas');
                     }
                   },
 
@@ -136,14 +136,14 @@
                       if (this.data.hasOwnProperty('faiconleft')) {
                           jQuery('.fa-icon-left', $el).remove();
                           if (this.data.faiconleft) {
-                              $el.prepend('<i style="word-spacing: -1em;" class="fa fa-icon-left ' + this.data.faiconleft + '">&nbsp;</i>\n');
+                              $el.prepend('<i style="word-spacing: -1em;" class="fas fa-icon-left ' + this.data.faiconleft + '">&nbsp;</i>\n');
                           }
                       }
 
                       if (this.data.hasOwnProperty('faiconright')) {
                           jQuery('.fa-icon-right', $el).remove();
                           if (this.data.faiconright) {
-                              $el.append('<i style="word-spacing: -1em;" class="fa fa-icon-right ' + this.data.faiconright + '">&nbsp;</i>\n');
+                              $el.append('<i style="word-spacing: -1em;" class="fas fa-icon-right ' + this.data.faiconright + '">&nbsp;</i>\n');
                           }
                       }
                   },
