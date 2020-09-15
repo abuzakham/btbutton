@@ -78,7 +78,7 @@
                     if (fa_icon_left.length > 0) {
                       fa_icon_left.removeClass('fa-icon-left').removeClass('fas');
                       this.data.faiconleft = fa_icon_left.attr('class');
-                      fa_icon_left.addClass('fa-icon-left').addClass('fa');
+                      fa_icon_left.addClass('fa-icon-left').addClass('fas');
                     }
 
                     if (fa_icon_right.length > 0) {
