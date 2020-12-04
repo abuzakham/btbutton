@@ -7,6 +7,7 @@ CKEDITOR.plugins.setLang('btbutton', 'pt-br', {
     tabIcons: 'Icones',
     buttonStyleLabel: 'Estilos',
     buttonSizeLabel: 'Tamanho',
+    buttonWidthLabel: 'Width',
     buttonTextLabel: 'Texto',
     buttonUrlLabel: 'URL',
     buttonTargetLabel: 'Target',
@@ -17,9 +18,12 @@ CKEDITOR.plugins.setLang('btbutton', 'pt-br', {
     buttonSuccess: 'Success',
     buttonWarning: 'Warning',
     buttonDanger: 'Danger',
+    buttonDark: 'Dark',
+    buttonLight: 'Light',
     buttonSizeExSmall: 'Extra Pequeno',
     buttonSizeSmall: 'Pequeno',
     buttonSizeNormal: 'Normal',
-    buttonSizeLarge: 'Grande'
+    buttonSizeLarge: 'Grande',
+    buttonBlockFullWidth: 'Full Width'
 });
 

@@ -17,6 +17,38 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                         widths: ["50%", "50%"],
                         children: [
                             {
+                                id: 'text',
+                                type: 'text',
+                                width: '200px',
+                                required: true,
+                                label: lang.buttonTextLabel,
+                                setup: function (widget) {
+                                    this.setValue(widget.data.text || 'A Button');
+                                },
+                                commit: function (widget) {
+                                    widget.setData('text', this.getValue());
+                                }
+                            },
+                            {
+                                id: 'href',
+                                type: 'text',
+                                width: '200px',
+                                required: true,
+                                label: lang.buttonUrlLabel,
+                                setup: function (widget) {
+                                    this.setValue(widget.data.href || '#');
+                                },
+                                commit: function (widget) {
+                                    widget.setData('href', this.getValue());
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        type: "hbox",
+                        widths: ["50%", "50%"],
+                        children: [
+                            {
                                 id: 'btntype',
                                 type: 'select',
                                 label: lang.buttonStyleLabel,
@@ -46,7 +78,8 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                                 items: [
                                     [lang.buttonSizeSmall, 'btn-sm'],
                                     [lang.buttonSizeNormal, ''],
-                                    [lang.buttonSizeLarge, 'btn-lg']
+                                    [lang.buttonSizeLarge, 'btn-lg'],
+                                    [lang.buttonBlockSize, 'btn-block']
                                 ],
                                 setup: function (widget) {
                                     this.setValue(widget.data.btnsize || '');
@@ -59,32 +92,21 @@ CKEDITOR.dialog.add('btbutton', function (editor) {
                     },
                     {
                         type: "hbox",
-                        widths: ["50%", "50%"],
+                        widths: ["50%"],
                         children: [
                             {
-                                id: 'text',
-                                type: 'text',
-                                width: '200px',
-                                required: true,
-                                label: lang.buttonTextLabel,
+                                id: 'btnblock',
+                                type: 'select',
+                                label: lang.buttonWidthLabel,
+                                items: [
+                                    [lang.buttonDefault, ''],
+                                    [lang.buttonBlockFullWidth, 'btn-block']
+                                ],
                                 setup: function (widget) {
-                                    this.setValue(widget.data.text || 'A Button');
+                                    this.setValue(widget.data.btnblock || '');
                                 },
                                 commit: function (widget) {
-                                    widget.setData('text', this.getValue());
-                                }
-                            },
-                            {
-                                id: 'href',
-                                type: 'text',
-                                width: '200px',
-                                required: true,
-                                label: lang.buttonUrlLabel,
-                                setup: function (widget) {
-                                    this.setValue(widget.data.href || '#');
-                                },
-                                commit: function (widget) {
-                                    widget.setData('href', this.getValue());
+                                    widget.setData('btnblock', this.getValue());
                                 }
                             }
                         ]
